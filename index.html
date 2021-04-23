@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet" />
+
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+  <div class="bg-purple-900 grid w-full items-center justify-items-center text-base overflow-auto sm:h-full" style="background-color: hsl(233, 47%, 7%);">
+    <div class="grid max-w-6xl rounded-xl overflow-hidden grid-cols-1 lg:grid-cols-2 my-16 mx-8 sm:m-8" style="background-color: hsl(244, 38%, 16%);">
+      <div class="p-8 lg:p-16">
+        <div class="text-white text-2xl text-center m-4 lg:text-4xl lg:text-left sm:mt-4 sm:mb-8 ">Get <span class="text-purple-500">insights</span> that help your
+          business grow.</div>
+        <div class="text-gray-600 text-center mb-12 sm:mb-20 lg:text-left ">Discover the benefits of data analytics and make better decisions regarding
+          revenue, customer
+          experience, and overall efficiency.</div>
+        <div class="text-white grid grid-cols-1 gap-6 justify-items-center lg:grid-cols-3 lg:justify-items-start">
+          <div>
+            <div class="text-2xl text-center lg:text-left">10k+</div>
+            <div class="text-gray-600 uppercase text-xs">companies</div>
+          </div>
+          <div>
+            <div class="text-2xl text-center lg:text-left">314</div>
+            <div class="text-gray-600 uppercase text-xs">templates</div>
+          </div>
+          <div>
+            <div class="text-2xl text-center lg:text-left">12M+</div>
+            <div class="text-gray-600 uppercase text-xs">queries</div>
+          </div>
+        </div>
+      </div>
+      <div class="preview-container__image bg-no-repeat bg-cover bg-center order-first h-64 lg:order-none lg:h-auto lg:order-none"
+        style="background-image: linear-gradient(to right, #6b46c1c2, #6b46c1c2), url(/images/image-header-desktop.jpg);">
+      </div>
+    </div>
+  </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tuan Ngo</a>.
   </div>
 </body>
+
 </html>
